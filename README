@@ -1,0 +1,37 @@
+Documentación para la WEB adopta un perro
+
+1) Finalidad de la APP
+2) Estructura de funciones y resultados esperados
+
+-----------------------------------------
+Finalidad de la APP
+
+La Aplicación tiene como finalidad el adoptar a un animal. PAra que la adopción se pueda efectuar con éxito, es requerido contar con una suma mínima de $40.000. Este monto es requisito por los costes mensuales de mantención del animal, contando comida, cuidados, etc.
+
+-----------------------------------------
+
+Estructura de funciones
+
+a) Funcion dog()
+
+Esta función se encarga de mostrar al usuario una selección de Razas disponibles para la adopción.
+Como resultado se espera que cualquier opción que no sea alguna de las 4 indicadas, le devuelva al usuario un mensaje indicando que debe seleccionar la raza correcta en base al listado.
+En caso de cancelar la operación le consulta si está seguro o si quiere volver a seleccionar, si acepta lo envía al menu nuevamente, si cancela lo sca de la app.
+
+b) Function cat()
+
+Misma lógica que para la función dog()
+
+c) Function adopt()
+
+Le consulta al usuario el tipod e animal a adoptar, entre perro y gato. En caso de que no seleccione nada lo devuelve al menu para que seleccione, si no selecciona nada le consulta si está seguro de querer salir o desea volver a seleccionar.
+
+d) Function requiredMoney()
+
+Ya que el mantenimiento mensual de un animal es caro, esta función valida su sueldo bruto para saber cuanta plata queda en mano.
+
+Si el sueldo es superior a 330000 pesos, aplica las retenciones de ganancias y si es menor solo el 17% de impuestos.
+
+Dicionalmente le consulta sobre el gasto mensual fijo que la persona posee
+
+En base a esto calcula si el total que le queda limpio es superior a 40000 y de ser así le deja continuar con la adopción, de no ser así le cancela la adpción.
